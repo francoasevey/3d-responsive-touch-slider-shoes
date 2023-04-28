@@ -11,6 +11,10 @@ body {
     min-width: 100vw;
     width: 100%;
     overflow: hidden;
+    background: #1F1C2C;
+    background: -webkit-linear-gradient(to bottom, #000000, #1F1C2C);
+    background: linear-gradient(to bottom, #6d6a7c, #1F1C2C);
+
 }
 body{
     min-height: 100vh;
@@ -33,9 +37,9 @@ body{
 }
 .slider-items li{
     position: absolute;
-    width: 30%;
-    height: 50%;
-    top: 15%;
+    width: 35%;
+    height: 60%;
+    top: -5%;
     left: 50%;
     cursor: pointer;
     z-index: 1;
@@ -54,7 +58,7 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     background-image: url('/img/sombra.webp');
@@ -94,8 +98,8 @@ body{
     width: 50px;
     height: 50px;
     top: 45%;
-    border-top: 2px solid #009e5f;
-    border-right: 2px solid #009e5f;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
     border-bottom: none;
     border-left: none;
     background-color: transparent;
@@ -119,7 +123,7 @@ body{
 .slider-dots ul{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .slider-dots ul li{
     width: 10px;
@@ -131,5 +135,5 @@ body{
     margin: 0 15px;
 }
 .slider-dots ul li.active{
-    background-color: #009e5f;
+    background-color: #000000;
 }
