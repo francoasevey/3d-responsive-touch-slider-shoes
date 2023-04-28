@@ -24,14 +24,12 @@ body{
     width: 50%;
     margin: auto;
     position: relative;
-    background-color: aqua;
 }
 .slider-items{
     height: 45vw;
     margin: 50px 0 0;
     position: relative;
     list-style-type: none;
-    background-color: blue;
 }
 .slider-items li{
     position: absolute;
@@ -39,7 +37,6 @@ body{
     height: 50%;
     top: 15%;
     left: 50%;
-    background-color: black;
     cursor: pointer;
     z-index: 1;
     transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1);
@@ -54,14 +51,41 @@ body{
 .slider-items li::after{
     content: '';
     position: absolute;
+    display: block;
     width: 100%;
     height: 100%;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('/img/bottle-shadow.webp');
+    background-image: url('/img/sombra.webp');
     background-repeat: no-repeat;
-    background-size: 50% 85%;
+    background-position: 50% 85%;
     background-size: 100% auto;
     transition: 0.3s;
+}
+.slider-items li:hover::after{
+    width: 90%;
+}
+.slider-items li.item-1{
+    z-index: 2;
+    transform: translateX(-50%) scale(1.5) translate3d(0, 0, 0);
+}
+.slider-items li.item-1 img{
+    transform: scale(1.8) rotate(5deg);
+}
+.slider-items li.item-2{
+    z-index: 1;
+    transform: translateX(-50%) scale(0.7) translate3d(240%, -10%, 0);
+}
+.slider-items li.item-3{
+    z-index: 0;
+    transform: translateX(-50%) scale(0.5) translate3d(180%, -31%, 0);
+}
+.slider-items li.item-4{
+    z-index: 0;
+    transform: translateX(-50%) scale(0.5) translate3d(-180%, -31%, 0);
+}
+.slider-items li.item-5{
+    z-index: 1;
+    transform: translateX(-50%) scale(0.7) translate3d(-240%, -10%, 0);
 }
